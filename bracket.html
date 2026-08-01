@@ -2,22 +2,87 @@
 <html lang="ru">
 
 <head>
+
 <meta charset="UTF-8">
-<title>Сетка турнира</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TT Rating - Турнир</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<h1>🏆 Турнирная сетка</h1>
+
+<div class="container">
 
 
-<div id="bracket">
+<h1>🏓 TT Rating</h1>
+
+<h2>Создание турнира</h2>
+
+
+
+<div class="add-player">
+
+
+<input 
+id="playerName"
+type="text"
+placeholder="Введите имя игрока">
+
+
+<button onclick="addPlayer()">
+Добавить игрока
+</button>
+
 
 </div>
 
 
-<script src="script.js"></script>
+
+<h2>Участники турнира</h2>
+
+
+<div id="players">
+
+</div>
+
+
+
+<br>
+
+
+<button onclick="createBracket()">
+
+Создать турнирную сетку
+
+</button>
+
+
+
+<h2>
+🏆 Турнирная сетка
+</h2>
+
+
+
+<div id="bracket">
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script type="module" src="script.js"></script>
+
 
 </body>
 
